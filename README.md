@@ -1,6 +1,8 @@
 # Bloblife
 A fun simulation to demonstrate evolution and natural selection
 
+![Screenshot of simulation in terminal](/screenshots/sim.png)
+
 # How it works
 ## Traits
 Each creature currently only has one trait used which is the sense of smell. This value is used to determine the range in which creatures can go for food. The bigger the value, the larger range the creature can "smell" for food.

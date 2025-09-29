@@ -22,7 +22,7 @@ fn main() -> io::Result<()> {
 
     let mut simulation = Simulation::new(cols, rows, 1);
 
-    simulation.seed(600, 1000);
+    simulation.seed(100, 1000);
 
     render::render(simulation)?;
 
