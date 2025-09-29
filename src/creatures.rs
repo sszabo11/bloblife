@@ -1,6 +1,6 @@
 use rand::Rng;
 
-const MUTATION_RATE: f64 = 0.05;
+const MUTATION_RATE: f64 = 0.0001;
 
 pub struct Creature {
     pub x: u16,
@@ -18,7 +18,7 @@ impl Creature {
         Self {
             x,
             y,
-            smell: 0.05,
+            smell: random_smell(),
             age: 30.00,
             speed: random_speed(),
             energy: random_energy(),
@@ -91,7 +91,7 @@ fn random_size() -> f64 {
 fn random_smell() -> f64 {
     let mut rng = rand::rng();
 
-    let smell: f64 = rng.gen_range(0.0..3.0);
+    let smell: f64 = rng.gen_range(0.0..2.0);
 
     smell
 }

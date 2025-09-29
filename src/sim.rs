@@ -20,7 +20,7 @@ use std::io::{Write, stdout};
 
 const MIN_ENERGY_TO_REPRODUCE: f64 = 50.00;
 const REPRODUCTION_RANGE: f64 = 50.00;
-const FOOD_PER_FRAME: u16 = 5;
+const FOOD_PER_FRAME: u16 = 3;
 
 pub struct Simulation {
     pub map: map::Map,
